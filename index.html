@@ -7,7 +7,13 @@
     <title>SouDEV</title>
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="./src/css/section.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script src="./src/js/index.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <header>
@@ -24,15 +30,20 @@
 
     <main>
       <section id="wellcome">
-        <h1>Wellcome</h1>
-        <div class="vertical">
+        <h1 class="animate__animated animate__bounce animate__delay-1s">
+          <span>Seja Bem-vindo!</span>
+        </h1>
+        <div class="vertical animate__animated animate__fadeInUpBig">
           <!-- <p><span>Ola</span>, meu nome é <span>Manuel de Sousa</span>, seja</p> -->
-          <p><span>Ola</span>, seja muito bem-vindo(a) a minha pagina, </p>
-
-          Olá! Gostaríamos de desejar a você boas-vindas ao nosso time! Sentimos que você tem muito a agregar e aprender conosco, por isso sua presença se fez tão importante para nós. Esperamos que você passe momentos incríveis por aqui e seja muito feliz também. Qualquer dúvida, sugestão ou pedido, pode nos consultar, porque estamos à sua disposição. Tenha um excelente dia e estamos muito alegres por te ter aqui!
-
-
-
+          <p>
+            <span>Ola</span>, Estou muito ansioso e feliz pela sua visita! Seja
+            muito bem-vindo(a), sinta-se à vontade para explorar e voltar sempre
+            que quiser, amigo(a).
+            <span
+              >Aqui, você sempre será bem-vindo e recebido da melhor
+              maneira</span
+            >. 😁❤️
+          </p>
           <button><a href="#about">Sobre Mim</a></button>
         </div>
         <!-- <img src="./src/img/welcome_wave.svg" alt="welcome wave"> -->
@@ -64,26 +75,48 @@
 
       <section id="about">
         <h2>about</h2>
+        <!-- animate__animated animate__fadeInLeftBig -->
+        <div data-aos="zoom-in" class="vertical">
+          <p>
+            O meu nome é Manuel Bunga Honoré de Sousa. Sou programador desde
+            2016, ter noções de diferentes linguagens de programação. Mas
+            atualmente, estou focado na WEB programação, onde dia após dia,
+            venho me esforçando para ser um FULL STACK, trabalho com HTML, CSS,
+            javascript (React.js), e também estou aprendendo Node.JS
+            (ExpressJS), mongoDB e MySQL... Tenho interesse em adquirir novos
+            conhecimentos, facilidade de aprendizado, liderança, dedicação,
+            agilidade, criatividade, organização e disponibilidade para
+            trabalhar. Boa apresentação, dinâmica, e boa direção. Procuro obter
+            uma oportunidade de colocar em prática o vasto leque de
+            conhecimentos adquiridos e garanto boa eficiência, amor fraterno e
+            bom espírito de equipe, capaz de realizar minha função e capacidade
+            de se adaptar a qualquer função
+          </p>
+        </div>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius soluta
-          quam rem beatae debitis sed! Blanditiis beatae corporis ex, dolor,
-          vero iure deserunt officiis ipsam repellat porro commodi culpa odit.
+          A humildade exprime uma das raras certezas de que estou certo: a de
+          que ninguém é superior a ninguém.Paulo Freire
         </p>
       </section>
 
       <section id="projects">
         <h2>Projects</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius soluta
-          quam rem beatae debitis sed! Blanditiis beatae corporis ex, dolor,
-          vero iure deserunt officiis ipsam repellat porro commodi culpa odit.
-        </p>
+        <div data-aos="zoom-in">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
+            soluta quam rem beatae debitis sed! Blanditiis beatae corporis ex,
+            dolor, vero iure deserunt officiis ipsam repellat porro commodi
+            culpa odit.
+          </p>
+        </div>
       </section>
 
       <section id="contacts">
         <h2>Entrar em Contato</h2>
         <p>
-            Tenho certeza que poderemos criar um grande laço de amizade, pois a nossa prioridade no departamento é viver em harmonia sempre! Seja bem-vindo!
+          Tenho certeza que poderemos criar um grande laço de amizade, pois a
+          nossa prioridade no departamento é viver em harmonia sempre! Seja
+          bem-vindo!
         </p>
       </section>
 
@@ -91,8 +124,8 @@
         <div>
           <h2>Thanks</h2>
           <p>
-            Te desejo uma boa continuação e muito obrigado por visitar meu site de portfólio pessoal. Conecte-se
-            comigo pelas redes sociais
+            Te desejo uma boa continuação e muito obrigado por visitar meu site
+            de portfólio pessoal. Conecte-se comigo pelas redes sociais
           </p>
         </div>
 

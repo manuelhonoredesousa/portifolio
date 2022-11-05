@@ -1,3 +1,4 @@
+AOS.init();
 // 
 const $toTop = document.getElementById("toTop");
 //
