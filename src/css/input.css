@@ -1,0 +1,58 @@
+:root {
+    --fundo: #1d2b3a;
+    --text: #fff;
+    --input-filled: #00dfc4;
+    --white-transp: rgba(255, 255, 255, 0.25);
+    --border-type-1: 1px solid var(--input-filled);
+    --border-type-2: 1px solid var(--white-transp);
+  }
+
+
+  .inputBox {
+    position: relative;
+    width: 250px;
+  }
+  .inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: var(--border-type-2);
+    background-color: var(--fundo);
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+    color: var(--text);
+    transition: 0.4s;
+  }
+  .inputBox input:valid,
+  /* .inputBox input:valid,  when validet, to keep or not*/
+  .inputBox input:focus {
+    border: var(--border-type-1);
+  }
+
+  .inputBox input:valid ~ span,
+  .inputBox input:focus ~ span {
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 1px 10px;
+    border-left: var(--border-type-1);
+    border-right: var(--border-type-1);
+    letter-spacing: 0.2em;
+
+    /* color: var(--input-filled);
+    background-color: var(--fundo); */
+    /* ou */
+
+    color: var(--fundo);
+    background-color: var(--input-filled);
+  }
+
+  .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: var(--white-transp);
+    text-transform: uppercase;
+    transition: 0.4s;
+  }

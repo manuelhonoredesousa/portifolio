@@ -40,7 +40,7 @@
 
 body {
   background-color: var(--color_gray_500);
-  font-family: "Roboto";
+  font-family:"Roboto", Arial, sans-serif;
   font-weight: var(--font_body);
   /* overflow-y: hidden; */
   /* scroll-behavior: smooth; */
@@ -50,7 +50,7 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
+.flex{ display: flex;}
 .vertical {
   flex-direction: column;
 }
@@ -134,8 +134,8 @@ main {
 }
 
 footer {
-  background-color: var(--color_gray_300);
-  /* background-color: var(--color_white); */
+  /* background-color: var(--color_gray_300); */
+  background-color: var(--color_primary);
   /* position: fixed; */
   /* bottom: 0; */
   /* width: 100%; */
