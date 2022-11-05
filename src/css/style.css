@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --font_heading: 700;
+  --font_body: 400;
+
+  /* --color_primary: #3779e3; */
+  /* --color_secundary: #1c5fc9; */
+
+  --color_primary: #996dff;
+  --color_secundary: #fba94c;
+  --color_green_700: #00875f;
+  --color_green_500: #00b37e;
+  --color_green_300: #04d361;
+  --color_gray_700: #121214;
+  --color_gray_600: #202024;
+  --color_gray_500: #29292e;
+  --color_gray_400: #323238;
+  --color_gray_300: #7c7c8a;
+  --color_gray_200: #c4c4cc;
+  --color_gray_100: #e1e1e6;
+  --color_white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color_gray_500);
+  font-family: "Roboto";
+  font-weight: var(--font_body);
+  /* overflow-y: hidden; */
+  /* scroll-behavior: smooth; */
+  /* scroll-behavior: inherit; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--color_white);
+}
+
+p {
+  color: var(--color_gray_100);
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5em;
+  background-color: var(--color_primary);
+  height: 5em;
+  /* position: fixed; */
+  /* top: 0; */
+  /* width: 100%; */
+  text-align: center;
+
+  border-bottom: 3px solid var(--color_secundary);
+}
+
+header h1 {
+  color: var(--color_secundary);
+}
+
+nav {
+}
+
+nav ul {
+  margin: 0px;
+  padding: 5px 0px 5px 30px;
+}
+
+nav li {
+  display: inline;
+  margin-right: 5px;
+  background-color: var(--color_secundary);
+  padding: 0.6em;
+
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+nav li:hover{
+    background-color: #d1852f;
+    cursor: pointer;
+}
+ nav li a:hover{
+    color: var(--color_white);
+ }
+
+a {
+  text-decoration: none;
+  font-weight: var(--font_heading);
+  color: var(--color_gray_400);
+}
+
+main {
+  height: 100vh;
+}
+
+
+
+
+
+footer {
+    background-color: var(--color_gray_100);
+    /* background-color: var(--color_white); */
+    /* position: fixed; */
+    /* bottom: 0; */
+    /* width: 100%; */
+    height: 15em;
+    text-align: center;
+    position: relative;
+  }
+
+  footer #toTop{
+    background-color: var(--color_white);
+    color:var(--color_white);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    right: -10;
+    bottom: -10;
+
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+footer #toTop:hover{
+    cursor: pointer;
+    color: var(--color_white);
+}

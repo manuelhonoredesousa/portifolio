@@ -1,0 +1,45 @@
+section {
+    /* background-color: #04d361; */
+    /* margin-bottom: 1em; */
+    padding: 3em 5em;
+    /* padding: 5em; */
+    height: 90vh;
+    /* height: 10em; */
+  }
+
+  section#wellcome{
+    position: relative;
+    /* background-color: #d12fa0c7; */
+}
+
+section#skills{
+    background-color: var(--color_primary);
+}
+section#projects{
+    background-color: var(--color_secundary);
+}
+section#contacts{
+    /* background-color: var(--color_gray_400); */
+}
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.waves svg {
+    position: relative;
+    display: block;
+    width: calc(166% + 1.3px);
+    height: 120px;
+    transform: rotateY(180deg);
+}
+
+.waves .shape-fill {
+    fill: var(--color_primary);
+}
