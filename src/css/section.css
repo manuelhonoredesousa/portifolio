@@ -7,7 +7,7 @@ section {
 }
 section h1 {
   font-size: 2em;
-  margin-bottom: 1em;
+  /* margin-bottom: 1em; */
 }
 
 section#wellcome {
@@ -206,3 +206,4 @@ section#contacts #contact-me form .send input {
   padding: 1em;
   font-size: var(--font_size_md);
 }
+
