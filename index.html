@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="./src/css/section.css" />
     <link rel="stylesheet" href="./src/css/input.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
     <script src="./src/js/index.js" defer></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
   </head>
   <body>
     <header>
@@ -31,23 +33,21 @@
 
     <main>
       <section id="wellcome">
-        <h1 class="animate__animated animate__bounce animate__delay-1s">
+        <h1 data-aos="fade-right">
           <span>Seja Bem-vindo!</span>
         </h1>
-        <div class="vertical animate__animated animate__fadeInUpBig">
-          <!-- <p><span>Ola</span>, meu nome é <span>Manuel de Sousa</span>, seja</p> -->
+        <div data-aos="fade-up" class="wellcome">
           <p>
-            <span>Ola</span>, Estou muito ansioso e feliz pela sua visita! Seja
-            muito bem-vindo(a), sinta-se à vontade para explorar e voltar sempre
-            que quiser, amigo(a).
+            Ola! Sou o <span>Manuel de Sousa</span>, estou muito ansioso e feliz
+            pela sua visita! Seja muito bem-vindo(a), sinta-se à vontade para
+            explorar e voltar sempre que quiser, amigo(a).
             <span
               >Aqui, você sempre será bem-vindo e recebido da melhor
               maneira</span
             >. 😁❤️
           </p>
-          <button><a href="#about">Sobre Mim</a></button>
+          <a class="btn_primary" href="#about">Sobre Mim</a>
         </div>
-        <!-- <img src="./src/img/welcome_wave.svg" alt="welcome wave"> -->
 
         <div class="waves-1">
           <svg
@@ -75,64 +75,179 @@
       </section>
 
       <section id="about">
-        <!-- animate__animated animate__fadeInLeftBig -->
-        <div data-aos="zoom-in" class="">
-          <h1 class="animate__animated animate__bounce animate__delay-1s">
-            <span>Sobre Mim</span>
-          </h1>
+        <div data-aos="zoom-in-left" class="">
+          <!-- <div data-aos="zoom-in" class=""> -->
+          <h1><span>SOBRE MIM</span></h1>
           <p>
-            O meu nome é Manuel Bunga Honoré de Sousa. Sou programador desde
-            2016, ter noções de diferentes linguagens de programação. Mas
-            atualmente, estou focado na WEB programação, onde dia após dia,
-            venho me esforçando para ser um FULL STACK, trabalho com HTML, CSS,
-            javascript (React.js), e também estou aprendendo Node.JS
-            (ExpressJS), mongoDB e MySQL... Tenho interesse em adquirir novos
-            conhecimentos, facilidade de aprendizado, liderança, dedicação,
-            agilidade, criatividade, organização e disponibilidade para
-            trabalhar. Boa apresentação, dinâmica, e boa direção. Procuro obter
-            uma oportunidade de colocar em prática o vasto leque de
-            conhecimentos adquiridos e garanto boa eficiência, amor fraterno e
-            bom espírito de equipe, capaz de realizar minha função e capacidade
-            de se adaptar a qualquer função.
+            Chamo-me é <span>MANUEL BUNGA HONORÉ DE SOUSA</span>. Sou
+            programador desde os 2016, quando comecei a fazer o Ensino Médio de
+            <span>Informática</span>, aprendi
+            <span>lógica de programação, Visual Basic e C#</span>, e após isso
+            em 2019 quando terminei o Ensino Médio, fiquei um tempo sem
+            programar, e comecei me focando em entrar na Universidade.
+          </p>
+
+          <p>
+            O Mundo foi surprendido com a COVID-19, e no período de 2020, por
+            curiosidade estudei um pouco de <span>JAVA e C</span> e já em 2021
+            eu decidi que entraria no mundo de programação <span>WEB</span>,
+            onde dia após dia, venho me esforçando para ser um FULL STACK, onde
+            a princípio o foco era trabalhar com HTML, CSS, javascript, porém
+            com muitas investigações acabei tendo interesse no mundo "mobile", e
+            actualmente eu realizo minhas actividades com
+            <span>Javascript & TypeScript (React.js e React Native)</span>, e no
+            <strong>Back-End</strong>
+            <span>Node.JS (ExpressJS), mongoDB e MySQL...</span> Pretendo algum
+            dia aprender <span>Python e PostgreSQL.</span>
+          </p>
+
+          <p>
+            Tenho interesse em adquirir novos conhecimentos, facilidade de
+            aprendizado, liderança, dedicação, agilidade, criatividade,
+            organização e disponibilidade para trabalhar. Boa apresentação,
+            dinâmica, e boa direção. Procuro obter uma oportunidade de colocar
+            em prática os conhecimentos adquiridos e garanto boa eficiência,
+            amor fraterno e bom espírito de equipe, capaz de realizar minha
+            função e capacidade de se adaptar a qualquer função.
           </p>
         </div>
-        <div data-aos="zoom-in" class="">
-          <h1 class="animate__animated animate__bounce animate__delay-1s">
+
+        <div data-aos="zoom-in-left" class="">
+          <!-- <div data-aos="zoom-out-up" class=""> -->
+          <h1>
             <span>FORMAÇÃO ACADÊMICA </span>
           </h1>
+
           <p>
-            Ensino médio concluido no Colégio Bondo Adelina, no curso Técnico de
-            Informática.
+            📜 Ensino médio concluido no
+            <strong><span>Colégio Bondo Adelina</span></strong
+            >, no curso <span>Técnico de Informática</span>. (De 2016 à 2019 - 4
+            Anos)
           </p>
           <p>
-            A frequentar o 2º ano de Engenharia Informática no Instituto
-            Superior Politécnico Tocoista (I.S.P.T).
+            📜 A frequentar o 3º ano de <span>Engenharia Informática</span> no
+            <strong
+              ><span
+                >Instituto Superior Politécnico Tocoista (I.S.P.T)</span
+              ></strong
+            >
+            (2020/2021 até 2024/2025 - 5 Anos).
           </p>
         </div>
-        <div data-aos="zoom-in" class="">
+
+        <div data-aos="zoom-in-left" class="">
           <h1 class="animate__animated animate__bounce animate__delay-1s">
             <span>FORMAÇAO PROFISSIONAL</span>
           </h1>
-           Curso de Informática  Curso de Hardware  Curso de Electricidade de
-          Construção Civil
+
+          <p>👨‍💻 Curso de Informática;</p>
+          <p>💻 Curso de Hardware;</p>
+          <p>⚡ Curso de Electricidade de Construção Civil;</p>
         </div>
-        <div data-aos="zoom-in" class="">
+
+        <div data-aos="zoom-in-left" class="">
           <h1 class="animate__animated animate__bounce animate__delay-1s">
-            <span>IDIOMA</span>
+            <span>IDIOMAS</span>
           </h1>
-           Português - Falado e escrito fluentemente  Inglês - Falado e
-          escrito
+
+          <p>🌍 <span>Português</span> - Falado e escrito fluentemente</p>
+          <p>🌍 <span>Inglês</span> - Falado e escrito</p>
         </div>
-        <div data-aos="zoom-in" class="">
+
+        <div class="">
           <h1 class="animate__animated animate__bounce animate__delay-1s">
-            <span>Habilidades</span>
+            <span>HABILIDADES</span>
           </h1>
-          <p>HTML</p>
-          <p>HTML</p>
-          <p>HTML</p>
-          <p>HTML</p>
-          <p>HTML</p>
-          <p>HTML</p>
+
+          <div class="skills">
+            <figure data-aos="zoom-out">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt="html-icon"
+              />
+              <figcaption>html</figcaption>
+            </figure>
+
+            <figure data-aos="zoom-out">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="css-icon"
+              />
+              <figcaption>css</figcaption>
+            </figure>
+
+            <figure data-aos="zoom-out">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="javascript-icon"
+              />
+              <figcaption>Javascript</figcaption>
+            </figure>
+
+            <figure data-aos="zoom-out">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                alt="typescript-icon"
+              />
+              <figcaption>typescript</figcaption>
+            </figure>
+
+            <figure data-aos="zoom-out">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="react-icon"
+              />
+              <figcaption>react.js</figcaption>
+            </figure>
+
+            <figure data-aos="zoom-out">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3074/3074119.png"
+                alt="react_native-icon"
+              />
+              <figcaption>react native</figcaption>
+            </figure>
+
+            <figure data-aos="zoom-out">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                alt="nodejs-icon"
+              />
+              <figcaption>node.js</figcaption>
+            </figure>
+
+            <figure data-aos="zoom-out">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                alt="expressjs-icon"
+              />
+              <figcaption>express.js</figcaption>
+            </figure>
+
+            <figure data-aos="zoom-out">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                alt="mongodb-icon"
+              />
+              <figcaption>mongo db</figcaption>
+            </figure>
+
+            <figure data-aos="zoom-out">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                alt="mysql-icon"
+              />
+              <figcaption>mysql</figcaption>
+            </figure>
+
+            <figure data-aos="zoom-out">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                alt="figma-icon"
+              />
+              <figcaption>figma</figcaption>
+            </figure>
+          </div>
         </div>
         <div class="tilt-1">
           <svg
@@ -151,14 +266,7 @@
 
       <section id="projects">
         <h1>PROJECTOS</h1>
-        <!-- <div data-aos="zoom-in" class="vertical project"> -->
-        <div class="vertical project">
-          <!--    <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut
-            suscipit nisi corporis, perferendis exercitationem dolore molestiae!
-            Recusandae, quibusdam velit, tempora minus provident at architecto
-            totam autem sapiente temporibus asperiores placeat.
-          </p> -->
+        <div class="VStake project">
           <div data-aos="zoom-in" class="card">
             <div class="img">
               <img src="https://wallpaperaccess.com/full/317501.jpg" alt="#" />
@@ -199,6 +307,7 @@
       </section>
 
       <section id="contacts">
+
         <div class="tilt-1">
           <svg
             data-name="Layer 1"
@@ -212,69 +321,75 @@
             ></path>
           </svg>
         </div>
-        <h1>CONTACTOS</h1>
+        
+        <h1><span>CONTACTOS</span></h1>
         <p>
-          Tenho certeza que poderemos criar um grande laço de amizade, pois a
-          nossa prioridade no departamento é viver em harmonia sempre! Seja
-          bem-vindo!
+          Tenho certeza que poderemos criar um bom laço de amizade, porque eu
+          amo o que faço e me dedido para ser melhor todos os dias.
         </p>
-        <div class="connect-me flex vertical">
-          <div class="flex horizontal">
-            <div>
-              <h2>Ilustration</h2>
-              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <p>
+          Não vamos perder mais tempo, mande uma mensagem para trocarmos uma
+          ideia...!
+        </p>
+        <div class="connect-me" data-aos="zoom-in-down">
+              <div id="ilustration">
+              <!-- <h2>Ilustration</h2> -->
               <lottie-player
                 src="src/img/contact.json"
                 background="transparent"
                 speed="1"
-                style="width: 300px; height: 300px"
                 loop
-                controls
+                style="width: 100%; height: 100%"
                 autoplay
               ></lottie-player>
             </div>
-            <div>
-              <h2>Entrar em Contato</h2>
-              <form action="" method="post">
-                <div class="flex vertical">
+
+            <div id="contact-me">
+              
+              <form action="" method="post" class="flex VStake">
+                <h2>Enviar Mensangem:</h2>
+
                   <div class="names flex">
                     <div class="inputBox">
                       <input type="text" required />
                       <span>First Name</span>
                     </div>
-
                     <div class="inputBox">
                       <input type="text" required />
                       <span>Last Name</span>
                     </div>
                   </div>
-
-                  <div class="inputBox flex">
-                    <input type="text" required />
+            
+                  <div class="inputBox ">
+                    <input type="email" required />
                     <span>Email</span>
                   </div>
 
-                  <div class="inputBox flex">
+                  <div class="inputBox" style="background-color: blue;">
                     <textarea
                       name="message"
                       id="message"
-                      cols="30"
-                      rows="10"
+                      rows="15"
+                      minlength="10"
                       required
                     ></textarea>
                     <span>Message</span>
                   </div>
-                </div>
-                <button>Enviar</button>
+
+                  <div class="send">
+                    <input class="btn_primary" type="submit" value="Enviar">
+                  </div>
+                  
               </form>
             </div>
-          </div>
+
+         
         </div>
       </section>
 
       <footer>
         <div>
-          <h2>Thanks</h2>
+          <h1>Muito Obrigado Pela Visita</h1>
           <p>
             Te desejo uma boa continuação e muito obrigado por visitar meu site
             de portfólio pessoal. Conecte-se comigo pelas redes sociais
@@ -310,5 +425,7 @@
         <div id="toTop"><span>▲</span></div>
       </footer>
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>

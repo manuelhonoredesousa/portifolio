@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Roboto:wght@400;700&display=swap");
 
 :root {
+  --font_family: "Roboto", Arial, sans-serif;
   --font_heading: 700;
   --font_body: 400;
 
@@ -40,7 +41,7 @@
 
 body {
   background-color: var(--color_gray_500);
-  font-family:"Roboto", Arial, sans-serif;
+  font-family: var(--font_family);
   font-weight: var(--font_body);
   /* overflow-y: hidden; */
   /* scroll-behavior: smooth; */
@@ -51,10 +52,10 @@ html {
   scroll-behavior: smooth;
 }
 .flex{ display: flex;}
-.vertical {
+.VStake {
   flex-direction: column;
 }
-.horizontal {
+.HStake {
   flex-direction: row;
 }
 
