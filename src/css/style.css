@@ -81,45 +81,6 @@ a:hover {
   color: var(--color_gray_500);
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 5em;
-  background-color: var(--color_primary);
-  height: 4em;
-  border-bottom: 4px solid var(--color_secundary);
-}
-header div,
-header nav li {
-  display: flex;
-  align-items: center;
-  height: 4em;
-}
-header div h1 {
-  color: var(--color_secundary);
-  margin-bottom: 0em;
-}
-header nav ul {
-  display: flex;
-}
-header nav li a {
-  padding: 1.4em 0.6em;
-  text-transform: uppercase;
-  font-weight: var(--font_heading);
-  transition: 0.3s ease-in-out;
-  -webkit-transition: 0.3s ease-in-out;
-  -moz-transition: 0.3s ease-in-out;
-  -ms-transition: 0.3s ease-in-out;
-  -o-transition: 0.3s ease-in-out;
-}
-header nav li a:hover {
-  background-color: var(--color_secundary);
-}
-header nav li {
-  list-style: none;
-}
-
-
 footer {
   /* background-color: var(--color_gray_400); */
   background-color: var(--color_white_shadow);
@@ -181,7 +142,6 @@ footer .bottom .social img {
 }
 
 footer #toTop {
-  
   background-color: var(--color_white);
   height: 50px;
   width: 50px;

@@ -61,7 +61,6 @@
   }
 }
 @media only screen and (max-width: 540px) {
-
 }
 @media only screen and (max-width: 380px) {
   section {
@@ -76,11 +75,10 @@
   }
   section#projects .card {
     width: 100%;
-    height:100%;
+    height: 100%;
   }
   section#contacts .connect-me #contact-me form {
-    padding: .4em;
-
+    padding: 0.4em;
   }
   footer {
     /* padding: 1em 1em; */
@@ -90,10 +88,10 @@
   section#contacts #contact-me form .inputBox span {
     font-size: 0.8em;
   }
-  header{
+  header {
     /* align-items: flex-start; */
   }
-  header div{
+  header div {
     display: none;
   }
 }
