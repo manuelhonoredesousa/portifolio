@@ -1,0 +1,80 @@
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+#btn-mobile {
+  color: #000;
+  display: none;
+}
+@media (max-width: 751px) {
+  #btn-mobile {
+    color: #fff;
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #menu-seta {
+    display: block;
+    width: 20px;
+    border-top: 2px solid;
+    color: currentColor;
+  }
+  #menu-seta::after,
+  #menu-seta::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-top: 5px;
+    background-color: currentColor;
+    position: relative;
+    transition: 0.4s;
+  }
+  #nav.active #menu-seta {
+    border-top-color: transparent;
+  }
+  #nav.active #menu-seta::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #menu-seta::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    overflow-y: hidden;
+    top: 70px;
+    right: 0;
+    background-color: rgb(85, 79, 79);
+    z-index: 1000;
+    transition: 0.4s;
+    /* visibility: hidden; */
+
+    visibility: visible;
+    height: 16.4em;
+  }
+  #nav.active #menu {
+    visibility: visible;
+    height: 16.4em;
+    /* overflow-y: none; */
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    /* border-bottom: 2px solid rgba(0, 0, 0, 0.5); */
+  }
+}

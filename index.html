@@ -7,7 +7,8 @@
     <title>SouDEV</title>
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="./src/css/section.css" />
-    <link rel="stylesheet" href="./src/css/input.css" />
+    <link rel="stylesheet" href="./src/css/mobile.css" />
+    <link rel="stylesheet" href="./src/css/header.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
 
@@ -18,10 +19,13 @@
     <script src="./src/js/index.js" defer></script>
   </head>
   <body>
-    <header>
-      <h1>SouDEV</h1>
-      <nav>
-        <ul>
+    <header id="header">
+     <div><h1>SouDEV</h1></div>
+      <nav id="nav">
+        <button id="btn-mobile">
+          <span id="menu-seta"></span>
+        </button>
+        <ul id="menu">
           <li><a href="#wellcome">Boas Vindas</a></li>
           <li><a href="#about">Sobre Mim</a></li>
           <li><a href="#projects">Projectos</a></li>
@@ -353,53 +357,54 @@
           Não vamos perder mais tempo, mande uma mensagem para trocarmos uma
           ideia...!
         </p>
-        <div class="connect-me" data-aos="zoom-in-down">
-          <div id="ilustration">
-            <!-- <h2>Ilustration</h2> -->
-            <lottie-player
-              src="src/img/contact.json"
-              background="transparent"
-              speed="1"
-              loop
-              style="width: 100%; height: 100%"
-              autoplay
-            ></lottie-player>
-          </div>
-
-          <div id="contact-me">
-            <form action="" method="post" class="flex VStake">
-              <h2>Enviar Mensangem:</h2>
-
-              <div class="names">
-                <div class="inputBox">
-                  <input type="text" required />
-                  <span>primeiro nome</span>
+        <div class="connect">
+          <div class="connect-me" data-aos="zoom-in-down">
+            <div id="ilustration">
+              <lottie-player
+                src="src/img/contact.json"
+                background="transparent"
+                speed="1"
+                loop
+                
+                autoplay
+              ></lottie-player>
+            </div>
+  <!-- style="width: 100%; height: 100%" -->
+            <div id="contact-me">
+              <form action="" method="post" class="flex VStake">
+                <h2>Enviar Mensangem:</h2>
+  
+                <div class="names">
+                  <div class="inputBox">
+                    <input type="text" required />
+                    <span>primeiro nome</span>
+                  </div>
+                  <div class="inputBox">
+                    <input type="text" required />
+                    <span>último nome</span>
+                  </div>
                 </div>
+  
                 <div class="inputBox">
-                  <input type="text" required />
-                  <span>último nome</span>
+                  <input type="email" required />
+                  <span>e-mail</span>
                 </div>
-              </div>
-
-              <div class="inputBox">
-                <input type="email" required />
-                <span>e-mail</span>
-              </div>
-
-              <div class="inputBox">
-                <textarea
-                  name="message"
-                  id="message"
-                  rows="10"
-                  required
-                ></textarea>
-                <span>mensagem</span>
-              </div>
-
-              <div class="send">
-                <input class="btn_primary" type="submit" value="Enviar" />
-              </div>
-            </form>
+  
+                <div class="inputBox">
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows="10"
+                    required
+                  ></textarea>
+                  <span>mensagem</span>
+                </div>
+  
+                <div class="send">
+                  <input class="btn_primary" type="submit" value="Enviar" />
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -407,7 +412,7 @@
       <footer>
         <div class="top">
           <div class="bye-bye">
-            <h1>MANUEL DE SOUSA (SouDEV)</h1>
+            <h1>OBRIGADO PELA ATENÇÃO</h1>
             <p>
               Te desejo uma boa continuação e muito obrigado por visitar meu
               site de portfólio pessoal. Conecte-se comigo pelas redes sociais
