@@ -11,11 +11,11 @@
   --color_primary: #996dff;
   --color_secundary: #fba94c;
   --color_gray_700: #121214;
-  /* --color_gray_600: #202024; */
+  --color_gray_600: #202024;
   --color_gray_500: #29292e;
-  /* --color_gray_400: #323238; */
-  /* --color_gray_300: #7c7c8a; */
-  /* --color_gray_200: #c4c4cc; */
+  --color_gray_400: #323238;
+  --color_gray_300: #7c7c8a;
+  --color_gray_200: #c4c4cc;
   --color_gray_100: #e1e1e6;
   --color_white: #fff;
   --color_white_shadow: rgba(255, 255, 255, 0.25);
@@ -24,10 +24,6 @@
   --font_size_md: 16px;
   --font_size_lg: 18px;
   --font_size_xl: 20px;
-  --font_size_2xl: 24px;
-  --font_size_3xl: 30px;
-  --font_size_4xl: 36px;
-  --font_size_5xl: 48px;
 }
 
 * {
@@ -43,9 +39,6 @@ body {
   background-color: var(--color_gray_500);
   font-family: var(--font_family);
   font-weight: var(--font_body);
-  /* overflow-y: hidden; */
-  /* scroll-behavior: smooth; */
-  /* scroll-behavior: inherit; */
 }
 
 html {
@@ -82,9 +75,7 @@ a:hover {
 }
 
 footer {
-  /* background-color: var(--color_gray_400); */
   background-color: var(--color_white_shadow);
-  /* height: 15em; */
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -98,11 +89,9 @@ footer .top {
   display: flex;
 }
 footer .top .bye-bye {
-  /* background-color: #00b37e; */
   margin-right: 2.5em;
 }
 footer .top .fast-links {
-  /* background-color: rgb(82, 47, 47); */
   width: 20em;
   padding-left: 1em;
 }
@@ -121,7 +110,6 @@ footer .bottom li {
   gap: 0.3em;
   color: var(--color_white);
   margin-bottom: 0.8em;
-  /* gap: .5em .8em; */
 }
 
 footer .bottom li img {
@@ -129,16 +117,10 @@ footer .bottom li img {
   height: 20px;
 }
 footer .bottom .social {
-  background-color: rebeccapurple;
-  /* width: 80%; */
   display: flex;
   flex-wrap: wrap;
   gap: 0.5em;
   margin-top: 1.5em;
-}
-footer .bottom .social img {
-  /* width: 35px; */
-  /* height: 35px; */
 }
 
 footer #toTop {
@@ -152,14 +134,15 @@ footer #toTop {
   box-shadow: var(--shadow_low);
   position: fixed;
   bottom: 20px;
-  /* right: 50px; */
   right: 30px;
   z-index: 99;
+
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+
   transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
@@ -168,8 +151,6 @@ footer #toTop {
 }
 footer #toTop:hover {
   cursor: pointer;
-  color: var(--color_white);
-  background-color: var(--color_secundary);
 }
 
 .flex {
