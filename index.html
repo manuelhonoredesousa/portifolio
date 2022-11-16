@@ -17,7 +17,7 @@
     />
     <script src="./src/js/index.js" defer></script>
   </head>
-  <body>
+  <body onload="loadding()">
     <header id="header">
       <div><h1>SouDEV</h1></div>
       <nav id="nav">
@@ -160,78 +160,7 @@
           <h1 class="animate__animated animate__bounce animate__delay-1s">
             <span>HABILIDADES</span>
           </h1>
-
-          <div class="skills">
-            <figure data-aos="zoom-out">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="html-icon"/>
-              <figcaption>html</figcaption>
-            </figure>
-
-            <figure data-aos="zoom-out">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="css-icon"/>
-              <figcaption>css</figcaption>
-            </figure>
-
-            <figure data-aos="zoom-out">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript-icon"/>
-              <figcaption>Javascript</figcaption>
-            </figure>
-
-            <figure data-aos="zoom-out">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="typescript-icon"/>
-              <figcaption>typescript</figcaption>
-            </figure>
-
-            <figure data-aos="zoom-out">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="react-icon"/>
-              <figcaption>react.js</figcaption>
-            </figure>
-
-            <figure data-aos="zoom-out">
-              <img src="https://cdn-icons-png.flaticon.com/512/3074/3074119.png" alt="react_native-icon"/>
-              <figcaption>react native</figcaption>
-            </figure>
-
-            <figure data-aos="zoom-out">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="nodejs-icon"/>
-              <figcaption>node.js</figcaption>
-            </figure>
-
-            <figure data-aos="zoom-out">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="expressjs-icon"/>
-              <figcaption>express.js</figcaption>
-            </figure>
-
-            <figure data-aos="zoom-out">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="mongodb-icon"/>
-              <figcaption>mongo db</figcaption>
-            </figure>
-
-            <figure data-aos="zoom-out">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="mysql-icon"/>
-              <figcaption>mysql</figcaption>
-            </figure>
-
-            <figure data-aos="zoom-out">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="git-icon"/>
-              <figcaption>git</figcaption>
-            </figure>
-
-            <figure data-aos="zoom-out">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github-icon"/>
-              <figcaption>github</figcaption>
-            </figure>
-
-            <figure data-aos="zoom-out">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="vscode-icon"/>
-              <figcaption>vscode</figcaption>
-            </figure>
-
-            <figure data-aos="zoom-out">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="figma-icon"/>
-              <figcaption>figma</figcaption>
-            </figure>
-          </div>
+          <div class="skills"></div>
         </div>
         <div class="tilt-1">
           <svg
@@ -250,44 +179,7 @@
 
       <section id="projects">
         <h1>PROJECTOS</h1>
-        <div class="VStake project">
-          <div data-aos="zoom-in" class="card">
-            <div class="img">
-              <img src="https://wallpaperaccess.com/full/317501.jpg" alt="#" />
-            </div>
-            <strong>PROJECTO A - (Vida Louca)</strong>
-          </div>
-          <div data-aos="zoom-in" class="card">
-            <div class="img">
-              <img src="https://wallpaperaccess.com/full/317501.jpg" alt="#" />
-            </div>
-            <strong>PROJECTO A - (Vida Louca)</strong>
-          </div>
-          <div data-aos="zoom-in" class="card">
-            <div class="img">
-              <img src="https://wallpaperaccess.com/full/317501.jpg" alt="#" />
-            </div>
-            <strong>PROJECTO A - (Vida Louca)</strong>
-          </div>
-          <div data-aos="zoom-in" class="card">
-            <div class="img">
-              <img src="https://wallpaperaccess.com/full/317501.jpg" alt="#" />
-            </div>
-            <strong>PROJECTO A - (Vida Louca)</strong>
-          </div>
-          <div data-aos="zoom-in" class="card">
-            <div class="img">
-              <img src="https://wallpaperaccess.com/full/317501.jpg" alt="#" />
-            </div>
-            <strong>PROJECTO A - (Vida Louca)</strong>
-          </div>
-          <div data-aos="zoom-in" class="card">
-            <div class="img">
-              <img src="https://wallpaperaccess.com/full/317501.jpg" alt="#" />
-            </div>
-            <strong>PROJECTO A - (Vida Louca)</strong>
-          </div>
-        </div>
+        <div class="VStake project"></div>
       </section>
 
       <section id="contacts">
@@ -433,6 +325,18 @@
 
         <div id="toTop"><span>▲</span></div>
       </footer>
+      <div class="show-project-info">
+        <div class="top-show-project-info">
+          <div class="btn">
+
+          </div> 
+          <button class="close"><strong>X</strong></button>
+        </div>
+        <div><strong>Projecto:</strong> <span id="prjct"></span></div> 
+        <div><span id="dscrptn"></span> </div>
+        <div class="tags"></div> 
+
+      </div>
     </main>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>

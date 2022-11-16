@@ -57,10 +57,13 @@
   }
 }
 @media only screen and (max-width: 559px) {
-  section#projects .card {
-    width: 11em;
-    height: 15em;
-  }
+  /* section#projects .card { */
+    /* width: 11em; */
+    /* height: 15em; */
+  /* } */
+  .show-project-info{
+    height: 45%;
+}
 }
 @media only screen and (max-width: 399px) {
   section#projects .card {

@@ -70,6 +70,7 @@ section#about .tilt-1 {
 section#projects {
   background-color: var(--color_secundary);
 }
+
 section#projects .project {
   gap: 1em;
   display: flex;
@@ -84,12 +85,24 @@ section#projects .card {
   box-shadow: var(--shadow_low);
   border: 1px solid var(--color_white_shadow);
   width: 21em;
-  height: 25em;
+  height: 21em;
   padding: 0.5em;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
   -ms-border-radius: 16px;
   -o-border-radius: 16px;
+}
+section#projects .card .card-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+section#projects .card .btn_card {
+  outline: none;
+  padding: .3em 2em;
+  background-color: var(--color_primary);
+  color: var(--color_white);
+  border-radius: 5px;
 }
 section#projects .card .img {
   width: 100%;

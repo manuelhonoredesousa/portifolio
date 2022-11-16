@@ -219,3 +219,51 @@ footer #toTop:hover {
 .btn_primary:hover {
   box-shadow: 1px 1px 8px var(--color_secundary);
 }
+
+.top-show-project-info{
+  background-color: var(--color_secundary);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .3em 1em;
+}
+.show-project-info{
+  box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
+  background-color: var(--color_primary);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: none;
+  flex-direction: column;
+  padding: 2.8em 1em;
+  gap: 1em;
+  border-top: 2px solid black;
+  height: 25%;
+}
+.on{
+  display: flex;
+}
+ .tags,.btn{ 
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5em;
+ }
+ .link-project{
+  background-color: var(--color_primary);
+  padding: .3em;
+  border-color: var(--color_primary);
+}
+.tag{
+  background-color: var(--color_secundary);
+  font-weight: bold;
+  color: var(--color_gray_500);
+  padding: .2rem;
+  border-radius: 8px;
+}
+.close{
+  padding: .3em; color: var(--color_white); background-color: var(--color_primary); border:none; cursor: pointer;
+}
