@@ -97,12 +97,18 @@ section#projects .card .card-info {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-section#projects .card .btn_card {
+section#projects .card button {
+  background-color: var(--color_secundary);
+  color: var(--color_white);
+  border: 1px solid var(--color_white);
+  cursor: pointer;
   outline: none;
   padding: .3em 2em;
-  background-color: var(--color_primary);
-  color: var(--color_white);
-  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
 }
 section#projects .card .img {
   width: 100%;

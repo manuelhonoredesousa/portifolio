@@ -8,6 +8,14 @@ const $skills = document.querySelector(".skills");
 const $projects = document.querySelector(".project");
 const $showProjects = document.querySelector(".show-project-info");
 const $btnClose = document.querySelector(".close");
+const $project = document.querySelector("#prjct")
+const $description = document.querySelector("#dscrptn")
+const $tags = document.querySelector(".tags")
+const $btn = document.querySelector(".btn")
+const $loaddingElement = document.querySelector(".loaddingElement");
+const $loadText = document.querySelector("#loadText");
+const formData = document.querySelector("form")
+
 let theProjects = Array();
 
 //Activiti
@@ -16,12 +24,25 @@ $toTop.onclick = () => scrollPageToTop();
 $btnClose.onclick = ()=> closeProjectShow()
 $btnMenu.addEventListener("click", toggleMenu);
 $btnMenu.addEventListener("touchstart", toggleMenu);
-$listItem.forEach((item) =>
-  item.addEventListener("click", remuveActiveMobileMenu)
-);
-$listItem.forEach((item) =>
-  item.addEventListener("touchstart", remuveActiveMobileMenu)
-);
+$listItem.forEach((item) => item.addEventListener("click", remuveActiveMobileMenu));
+$listItem.forEach((item) =>item.addEventListener("touchstart", remuveActiveMobileMenu));
+formData.addEventListener('submit', function (e) {
+    e.preventDefault(e)
+  console.log(e)
+    // async function posta (f_n, l_n, s_l, d_t){
+      // await fetch("http://localhost:3000/users",{
+          // method: 'POST',
+          // headers: {'Content-Type':'application/json'},
+          // body: JSON.stringify({
+              // firstName: f_n,
+              // lastName: l_n,
+              // sallary: s_l,
+              // date: d_t
+          // })
+      // }).then(d=>d.json()).then(d=>console.log(d)).catch(e=> console.log('deu pau', e))
+  // }
+
+})
 
 //Functions Bellow
 function loadding() {
@@ -50,18 +71,21 @@ function loadding() {
             </div>
           `);
       });
+      $loaddingElement.classList.add("hide")
     })
     .catch((err) => {
-      console.log("Erro ao obter os dados...!");
+      $loadText.innerText = 'Infelizmente estou com problemas para obter os dados da API...Tente actualizar novamente a página.'
     });
 }
+function sendMail() {
+  alert("Email send")
+  // e.preventDefault(e)
+}
+
+
+
 function showProject(projectName){
   const thisOne = theProjects.find(item => item.name == projectName)
-  // console.log(thisOne);
-  const $project = document.querySelector("#prjct")
-  const $description = document.querySelector("#dscrptn")
-  const $tags = document.querySelector(".tags")
-  const $btn = document.querySelector(".btn")
 
   $project.innerText = thisOne.name
   $description.innerText = thisOne.description
