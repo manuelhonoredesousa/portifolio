@@ -4,18 +4,16 @@ const $toTop = document.getElementById("toTop");
 const $nav = document.querySelector("#nav");
 const $btnMenu = document.querySelector("#btn-mobile");
 const $listItem = document.querySelectorAll(".list-item");
-const $skills = document.querySelector(".skills");
-const $projects = document.querySelector(".project");
 const $showProjects = document.querySelector(".show-project-info");
 const $btnClose = document.querySelector(".close");
-const $project = document.querySelector("#prjct")
-const $description = document.querySelector("#dscrptn")
-const $tags = document.querySelector(".tags")
-const $btn = document.querySelector(".btn")
-const $loaddingElement = document.querySelector(".loaddingElement");
-
 const formData = document.querySelector("form")
-
+const $firstName = document.querySelector("#first_name"); 
+const $lastName = document.querySelector("#last_name"); 
+const $email = document.querySelector("#email"); 
+const $message = document.querySelector("#message"); 
+const $loaddingElement = document.querySelector(".loaddingElement");
+const $loadText = document.querySelector("#loadText");
+const $loadSVG = document.querySelector(".different-directions");
 let theProjects = Array();
 
 //Activiti
@@ -28,25 +26,44 @@ $listItem.forEach((item) => item.addEventListener("click", remuveActiveMobileMen
 $listItem.forEach((item) =>item.addEventListener("touchstart", remuveActiveMobileMenu));
 formData.addEventListener('submit', function (e) {
     e.preventDefault(e)
-  console.log(e)
-    // async function posta (f_n, l_n, s_l, d_t){
-      // await fetch("http://localhost:3000/users",{
-          // method: 'POST',
-          // headers: {'Content-Type':'application/json'},
-          // body: JSON.stringify({
-              // firstName: f_n,
-              // lastName: l_n,
-              // sallary: s_l,
-              // date: d_t
-          // })
-      // }).then(d=>d.json()).then(d=>console.log(d)).catch(e=> console.log('deu pau', e))
-  // }
-
+    $loadText.innerText = 'Enviando Email...'
+    $loadSVG.classList.remove("hide")
+    $loaddingElement.classList.remove("hide")
+    fetch("https://soudev-api.onrender.com/v1/email", {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({
+        first_name: $firstName.value,
+        last_name: $lastName.value,
+        email: $email.value,
+        messagem: $message.value,
+        subject: "SOUDEV - Portifolio"	
+      })
+    })
+    .then((res)=>{
+      $loadSVG.classList.add("hide")
+      $loadText.innerText = 'Email enviado com sucesso...!'
+      $message.value=''
+    })
+    .catch((err)=>{
+      $loadSVG.classList.add("hide")
+      $loadText.innerText = 'Erro ao enviar o Email...!'
+    })
+.finally(()=>{
+  setTimeout(() => {
+    $loaddingElement.classList.add("hide")
+  }, 3000);
+})
 })
 
 //Functions Bellow
 function loadding() {
-  fetch("http://localhost:3000/v1/soudev")
+  const $skills = document.querySelector(".skills");
+  const $projects = document.querySelector(".project");
+  const $header = document.querySelector("header");
+  const $main = document.querySelector("main");
+
+  fetch("https://soudev-api.onrender.com/v1/soudev")
     .then((res) => res.json())
     .then((data) => {
       const { skills, projects } = data;
@@ -71,28 +88,31 @@ function loadding() {
             </div>
           `);
       });
+      $header.classList.remove("hide")
+      $main.classList.remove("hide")
       $loaddingElement.classList.add("hide")
     })
     .catch((err) => {
-      const $loadText = document.querySelector("#loadText");
+    
+      const $btn_card = document.querySelector(".btn_card");
+      
       $loadText.innerText = 'Infelizmente estou com problemas para obter os dados da API...Tente actualizar novamente a página.'
-      $BTN_Reload = document.createElement("button")
-      $BTN_Reload.innerText = "Recarregar Pagina";
-      // $BTN_Reload.classList.add("btn_card")
-      $loaddingElement.appendChild($BTN_Reload)
+      $loadSVG.classList.add("hide")
+      $btn_card.classList.remove("hide")
     });
-}
-function sendMail() {
-  alert("Email send")
-  // e.preventDefault(e)
 }
 
 function reloadPage(){
-  alert("Reload Page")
+  location.reload();
 }
 
 function showProject(projectName){
+  const $project = document.querySelector("#prjct")
+  const $description = document.querySelector("#dscrptn")
+  const $tags = document.querySelector(".tags")
+  const $btn = document.querySelector(".btn")
   const thisOne = theProjects.find(item => item.name == projectName)
+ 
 
   $project.innerText = thisOne.name
   $description.innerText = thisOne.description

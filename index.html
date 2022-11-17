@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SouDEV</title>
+    <link rel="icon" type="image" href="/src/img/myLogo1.png" />
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="./src/css/section.css" />
     <link rel="stylesheet" href="./src/css/mobile.css" />
@@ -17,8 +18,8 @@
     <script src="./src/js/index.js" defer></script>
   </head>
   <body onload="loadding()">
-    <div class="loaddingElement"><div class="different-directions"></div><p id="loadText">Carregando os dados da API...</p><button class="btn_card" onclick="reloadPage()">Recarregar Pagina</button></div>
-    <header id="header">
+    <div class="loaddingElement"><div class="different-directions"></div><p id="loadText">Carregando os dados da API...</p><button class="btn_card hide" onclick="reloadPage()">Recarregar Pagina</button></div>
+    <header id="header" class="hide">
       <div><h1>SouDEV</h1></div>
       <nav id="nav">
         <button id="btn-mobile">
@@ -32,7 +33,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="hide">
       <section id="wellcome">
         <h1 data-aos="fade-right">
           <span>Seja Bem-vindo!</span>
@@ -60,7 +61,6 @@
 
       <section id="about">
         <div data-aos="zoom-in" class="">
-          <!-- <div data-aos="zoom-in" class=""> -->
           <h1><span>SOBRE MIM</span></h1>
           <p>
             Chamo-me é <span>MANUEL BUNGA HONORÉ DE SOUSA</span>. Sou
@@ -97,7 +97,6 @@
         </div>
 
         <div data-aos="zoom-in" class="">
-          <!-- <div data-aos="zoom-out-up" class=""> -->
           <h1>
             <span>FORMAÇÃO ACADÊMICA </span>
           </h1>
@@ -145,16 +144,8 @@
           <div class="skills"></div>
         </div>
         <div class="tilt-1">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-              class="shape-fill"
-            ></path>
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" >
+            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill" ></path>
           </svg>
         </div>
       </section>
@@ -166,16 +157,8 @@
 
       <section id="contacts">
         <div class="tilt-1">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-              class="shape-fill"
-            ></path>
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" > 
+            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill" ></path>
           </svg>
         </div>
 
@@ -199,29 +182,27 @@
                 autoplay
               ></lottie-player>
             </div>
-            <!-- style="width: 100%; height: 100%" -->
             <div id="contact-me">
               <form class="flex VStake">
                 <h2>ENVIAR MENSAGEM:</h2>
                 <div class="names">
                   <div class="inputBox">
-                    <input type="text" required />
+                    <input type="text" id="first_name" required />
                     <span>primeiro nome</span>
                   </div>
                   <div class="inputBox">
-                    <input type="text" required />
+                    <input type="text" id="last_name" required />
                     <span>último nome</span>
                   </div>
                 </div>
 
                 <div class="inputBox">
-                  <input type="email" required />
+                  <input type="email" id="email" required />
                   <span>e-mail</span>
                 </div>
 
                 <div class="inputBox">
                   <textarea
-                    name="message"
                     id="message"
                     rows="10"
                     required
@@ -314,7 +295,6 @@
         <div><strong>Projecto:</strong> <span id="prjct"></span></div> 
         <div><span id="dscrptn"></span> </div>
         <div class="tags"></div> 
-
       </div>
     </main>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
