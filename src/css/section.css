@@ -97,7 +97,7 @@ section#projects .card .card-info {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-section#projects .card button {
+.btn_card {
   background-color: var(--color_secundary);
   color: var(--color_white);
   border: 1px solid var(--color_white);

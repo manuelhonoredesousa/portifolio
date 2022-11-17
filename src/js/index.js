@@ -76,8 +76,10 @@ function loadding() {
     .catch((err) => {
       const $loadText = document.querySelector("#loadText");
       $loadText.innerText = 'Infelizmente estou com problemas para obter os dados da API...Tente actualizar novamente a página.'
-      // $loadText.innerText = 
-      console.log('Infelizmente estou com problemas para obter os dados da API...Tente actualizar novamente a página.')
+      $BTN_Reload = document.createElement("button")
+      $BTN_Reload.innerText = "Recarregar Pagina";
+      // $BTN_Reload.classList.add("btn_card")
+      $loaddingElement.appendChild($BTN_Reload)
     });
 }
 function sendMail() {
@@ -85,7 +87,9 @@ function sendMail() {
   // e.preventDefault(e)
 }
 
-
+function reloadPage(){
+  alert("Reload Page")
+}
 
 function showProject(projectName){
   const thisOne = theProjects.find(item => item.name == projectName)
