@@ -13,7 +13,7 @@ const $description = document.querySelector("#dscrptn")
 const $tags = document.querySelector(".tags")
 const $btn = document.querySelector(".btn")
 const $loaddingElement = document.querySelector(".loaddingElement");
-const $loadText = document.querySelector("#loadText");
+
 const formData = document.querySelector("form")
 
 let theProjects = Array();
@@ -74,7 +74,10 @@ function loadding() {
       $loaddingElement.classList.add("hide")
     })
     .catch((err) => {
+      const $loadText = document.querySelector("#loadText");
       $loadText.innerText = 'Infelizmente estou com problemas para obter os dados da API...Tente actualizar novamente a página.'
+      // $loadText.innerText = 
+      console.log('Infelizmente estou com problemas para obter os dados da API...Tente actualizar novamente a página.')
     });
 }
 function sendMail() {
