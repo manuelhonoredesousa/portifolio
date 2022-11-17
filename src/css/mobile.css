@@ -1,0 +1,132 @@
+@media only screen and (max-width: 1100px) {
+  section#wellcome {
+    font-size: x-large;
+  }
+  section#wellcome a {
+    font-size: large;
+  }
+}
+@media only screen and (max-width: 860px) {
+  section {
+    padding: 3em 2em;
+  }
+  header {
+    padding: 0 2em;
+  }
+  footer {
+    padding: 1em 2em;
+  }
+  section h1 {
+    font-size: 2em;
+  }
+}
+@media only screen and (max-width: 751px) {
+  section {
+    padding: 3em 1em;
+  }
+  footer {
+    padding: 1em 1em;
+  }
+
+  section#projects .card {
+    width: 16em;
+    height: 20em;
+  }
+  section#contacts .connect-me #ilustration {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  section#wellcome {
+    font-size: large;
+  }
+  section#wellcome a {
+    font-size: medium;
+  }
+  section#contacts .connect-me {
+    width: 100%;
+  }
+  footer .top .bye-bye h1 {
+    font-size: x-large;
+  }
+  footer .top .bye-bye {
+    margin-right: 0em;
+  }
+  footer .top .fast-links {
+    width: 31em;
+  }
+}
+@media only screen and (max-width: 559px) {
+  /* section#projects .card { */
+    /* width: 11em; */
+    /* height: 15em; */
+  /* } */
+  .show-project-info{
+    height: 45%;
+}
+}
+@media only screen and (max-width: 399px) {
+  section#projects .card {
+    width: 90%;
+    height: 90%;
+  }
+}
+@media only screen and (max-width: 380px) {
+  section#wellcome {
+    font-size: medium;
+  }
+  section#projects .card {
+    width: 100%;
+    height: 100%;
+  }
+  section#contacts .connect-me #contact-me form {
+    padding: 0.4em;
+  }
+  section#contacts #contact-me form .inputBox textarea:valid ~ span,
+  section#contacts #contact-me form .inputBox textarea:focus ~ span,
+  section#contacts #contact-me form .inputBox input:valid ~ span,
+  section#contacts #contact-me form .inputBox input:focus ~ span {
+    font-size: 0.6em;
+    padding: 1px 5px;
+    letter-spacing: 0em;
+  }
+  footer .top {
+    flex-wrap: wrap;
+  }
+  footer .bottom .social {
+    margin-bottom: 5em;
+  }
+}
+@media only screen and (max-width: 303px) {
+  section#about .skills figure {
+    width: 6em;
+  }
+  section#about .skills figure figcaption {
+    font-size: var(--font_size_sm);
+  }
+}
+@media only screen and (max-width: 379px) {
+  section#contacts #contact-me form .inputBox span {
+    font-size: 0.8em;
+  }
+  header div {
+    display: none;
+  }
+}
+@media only screen and (max-width: 270px) {
+  section#wellcome a {
+    font-size: small;
+  }
+  section#wellcome h1 {
+    font-size: 1.5em;
+  }
+  section h1 {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+  }
+}
+@media only screen and (max-width: 239px) {
+  section#about .skills figure {
+    width: 60%;
+  }
+}

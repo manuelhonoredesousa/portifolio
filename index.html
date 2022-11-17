@@ -4,13 +4,300 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manuel de Sousa</title>
-    <link rel="stylesheet" href="./src/css/style.css">
+    <title>SouDEV</title>
+    <link rel="icon" type="image" href="/src/img/myLogo1.png" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/section.css" />
+    <link rel="stylesheet" href="./src/css/mobile.css" />
+    <link rel="stylesheet" href="./src/css/header.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
     <script src="./src/js/index.js" defer></script>
   </head>
-  <body>
-    <header>header</header>
-    <main>main</main>
-    <footer>footer</footer>
+  <body onload="loadding()">
+    <div class="loaddingElement"><div class="different-directions"></div><p id="loadText">Carregando os dados da API...</p><button class="btn_card hide" onclick="reloadPage()">Recarregar Pagina</button></div>
+    <header id="header" class="hide">
+      <div><h1>SouDEV</h1></div>
+      <nav id="nav">
+        <button id="btn-mobile">
+          <span id="menu-seta"></span>
+        </button>
+        <ul id="menu">
+          <li class="list-item"><a href="#wellcome">Boas Vindas</a></li>
+          <li class="list-item"><a href="#about">Sobre Mim</a></li>
+          <li class="list-item"><a href="#projects">Projectos</a></li>
+          <li class="list-item"><a href="#contacts">Contactos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="hide">
+      <section id="wellcome">
+        <h1 data-aos="fade-right">
+          <span>Seja Bem-vindo!</span>
+        </h1>
+        <div data-aos="fade-up" class="wellcome">
+          <p>
+            Ola! Sou o <span>Manuel de Sousa</span>, estou muito ansioso e feliz
+            pela sua visita! Seja muito bem-vindo(a), sinta-se à vontade para
+            explorar e voltar sempre que quiser, amigo(a).
+            <span
+              >Aqui, você sempre será bem-vindo e recebido da melhor
+              maneira</span
+            >.
+          </p>
+          <a class="btn_primary" href="#about">Sobre Mim</a>
+        </div>
+        <div class="waves-1">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill" ></path>
+          </svg>
+        </div>
+      </section>
+
+      <section id="about">
+        <div data-aos="zoom-in" class="">
+          <h1><span>SOBRE MIM</span></h1>
+          <p>
+            Chamo-me é <span>MANUEL BUNGA HONORÉ DE SOUSA</span>. Sou
+            programador desde os 2016, quando comecei a fazer o Ensino Médio de
+            <span>Informática</span>, aprendi
+            <span>lógica de programação, Visual Basic e C#</span>, e após isso
+            em 2019 quando terminei o Ensino Médio, fiquei um tempo sem
+            programar, e comecei me focando em entrar na Universidade.
+          </p>
+
+          <p>
+            O Mundo foi surprendido com a COVID-19, e no período de 2020, por
+            curiosidade estudei um pouco de <span>JAVA e C</span> e já em 2021
+            eu decidi que entraria no mundo de programação <span>WEB</span>,
+            onde dia após dia, venho me esforçando para ser um FULL STACK, onde
+            a princípio o foco era trabalhar com HTML, CSS, javascript, porém
+            com muitas investigações acabei tendo interesse no mundo "mobile", e
+            actualmente eu realizo minhas actividades com
+            <span>Javascript & TypeScript (React.js e React Native)</span>, e no
+            <strong>Back-End</strong>
+            <span>Node.JS (ExpressJS), mongoDB e MySQL...</span> Pretendo algum
+            dia aprender <span>Python e PostgreSQL.</span>
+          </p>
+
+          <p>
+            Tenho interesse em adquirir novos conhecimentos, facilidade de
+            aprendizado, liderança, dedicação, agilidade, criatividade,
+            organização e disponibilidade para trabalhar. Boa apresentação,
+            dinâmica, e boa direção. Procuro obter uma oportunidade de colocar
+            em prática os conhecimentos adquiridos e garanto boa eficiência,
+            amor fraterno e bom espírito de equipe, capaz de realizar minha
+            função e capacidade de se adaptar a qualquer função.
+          </p>
+        </div>
+
+        <div data-aos="zoom-in" class="">
+          <h1>
+            <span>FORMAÇÃO ACADÊMICA </span>
+          </h1>
+
+          <p>
+            📜 Ensino médio concluido no
+            <strong><span>Colégio Bondo Adelina</span></strong
+            >, no curso <span>Técnico de Informática</span>. (De 2016 à 2019 - 4
+            Anos)
+          </p>
+          <p>
+            📜 A frequentar o 3º ano de <span>Engenharia Informática</span> no
+            <strong
+              ><span
+                >Instituto Superior Politécnico Tocoista (I.S.P.T)</span
+              ></strong
+            >
+            (2020/2021 até 2024/2025 - 5 Anos).
+          </p>
+        </div>
+
+        <div data-aos="zoom-in" class="">
+          <h1 class="animate__animated animate__bounce animate__delay-1s">
+            <span>FORMAÇAO PROFISSIONAL</span>
+          </h1>
+
+          <p>👨‍💻 Curso de Informática;</p>
+          <p>💻 Curso de Hardware;</p>
+          <p>⚡ Curso de Electricidade de Construção Civil;</p>
+        </div>
+
+        <div data-aos="zoom-in" class="">
+          <h1 class="animate__animated animate__bounce animate__delay-1s">
+            <span>IDIOMAS</span>
+          </h1>
+
+          <p>🌍 <span>Português</span> - Falado e escrito fluentemente</p>
+          <p>🌍 <span>Inglês</span> - Falado e escrito</p>
+        </div>
+
+        <div class="">
+          <h1 class="animate__animated animate__bounce animate__delay-1s">
+            <span>HABILIDADES</span>
+          </h1>
+          <div class="skills"></div>
+        </div>
+        <div class="tilt-1">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" >
+            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill" ></path>
+          </svg>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h1>PROJECTOS</h1>
+        <div class="VStake project"></div>
+      </section>
+
+      <section id="contacts">
+        <div class="tilt-1">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" > 
+            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill" ></path>
+          </svg>
+        </div>
+
+        <h1><span>CONTACTOS</span></h1>
+        <p>
+          Tenho certeza que poderemos criar um bom laço de amizade, porque eu
+          amo o que faço e me dedido para ser melhor todos os dias.
+        </p>
+        <p>
+          Não vamos perder mais tempo, mande uma mensagem para trocarmos uma
+          ideia...!
+        </p>
+        <div class="connect">
+          <div class="connect-me" data-aos="zoom-in-down">
+            <div id="ilustration">
+              <lottie-player
+                src="src/img/contact.json"
+                background="transparent"
+                speed="1"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+            <div id="contact-me">
+              <form class="flex VStake">
+                <h2>ENVIAR MENSAGEM:</h2>
+                <div class="names">
+                  <div class="inputBox">
+                    <input type="text" id="first_name" required />
+                    <span>primeiro nome</span>
+                  </div>
+                  <div class="inputBox">
+                    <input type="text" id="last_name" required />
+                    <span>último nome</span>
+                  </div>
+                </div>
+
+                <div class="inputBox">
+                  <input type="email" id="email" required />
+                  <span>e-mail</span>
+                </div>
+
+                <div class="inputBox">
+                  <textarea
+                    id="message"
+                    rows="10"
+                    required
+                  ></textarea>
+                  <span>mensagem</span>
+                </div>
+
+                <div class="send">
+                  <input class="btn_primary" type="submit" value="Enviar" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="top">
+          <div class="bye-bye">
+            <h1>OBRIGADO PELA ATENÇÃO</h1>
+            <p>
+              Te desejo uma boa continuação e muito obrigado por visitar meu
+              site de portfólio pessoal. Conecte-se comigo pelas redes sociais
+              abaixo:
+            </p>
+          </div>
+          <div class="fast-links">
+            <h2>Link Rápido</h2>
+            <ul>
+              <li><a href="#wellcome">▶ Boas Vindas</a></li>
+              <li><a href="#about">▶ Sobre Mim</a></li>
+              <li><a href="#projects">▶ Projectos</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <h2>Contactos</h2>
+          <ol>
+            <li>
+              <img src="./src/img/phone.svg" alt="phone-icon" />+244 938308215
+            </li>
+            <li>
+              <img
+                src="./src/img/gmail.svg"
+                alt="gmail-icon"
+              />sousa64manuel@gmail.com
+            </li>
+            <li>
+              <img src="./src/img/maps.svg" alt="map-icon" />Golf-1, Luanda,
+              Angola
+            </li>
+          </ol>
+
+          <div class="social">
+            <a
+              href="https://www.linkedin.com/in/manuelhonoredesousa/"
+              target="_blank"
+              ><img
+                src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"
+                alt="linkedin-icon"
+            /></a>
+            <a href="https://github.com/manuelhonoredesousa" target="_blank"
+              ><img
+                src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                alt="github-icon"
+            /></a>
+            <a href="mailto:sousa64manuel@gmail.com" target="_blank"
+              ><img
+                src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"
+                alt="gmail-icon"
+            /></a>
+            <a
+              href="https://api.whatsapp.com/send?phone=244938308215"
+              target="_blank"
+              ><img
+                src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"
+                alt="whatsapp-icon"
+            /></a>
+          </div>
+        </div>
+
+        <div id="toTop"><span>▲</span></div>
+      </footer>
+      <div class="show-project-info">
+        <div class="top-show-project-info">
+          <div class="btn"></div> 
+          <button class="close"><strong>X</strong></button>
+        </div>
+        <div><strong>Projecto:</strong> <span id="prjct"></span></div> 
+        <div><span id="dscrptn"></span> </div>
+        <div class="tags"></div> 
+      </div>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>

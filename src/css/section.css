@@ -1,0 +1,231 @@
+section {
+  padding: 3em 5em;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 1em;
+}
+section h1 {
+  font-size: 2em;
+}
+
+section#wellcome {
+  font-size: xx-large;
+}
+section#wellcome .wellcome {
+  margin-bottom: 5em;
+  display: flex;
+  flex-direction: column;
+  /* gap: 1em; */
+}
+section#wellcome h1 {
+  font-size: 2em;
+  margin-bottom: 0em;
+}
+section#wellcome a {
+  max-width: 10em;
+  text-align: center;
+  padding: 0.8em 1em;
+  font-size: x-large;
+}
+
+section#about {
+  background-color: var(--color_primary);
+  padding-bottom: 10em;
+}
+section#about .skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+section#about .skills figure {
+  background: var(--color_white_shadow);
+  border-radius: 16px;
+  box-shadow: var(--shadow_low);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid var(--color_white_shadow);
+  padding: 0.4em;
+  width: 8em;
+}
+section#about .skills figure img {
+  width: 100%;
+}
+section#about .skills figure figcaption {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: var(--font_heading);
+  color: var(--color_gray_100);
+}
+section#about .tilt-1 {
+  bottom: 0;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+section#projects {
+  background-color: var(--color_secundary);
+}
+
+section#projects .project {
+  gap: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section#projects .card {
+  background-color: var(--color_white_shadow);
+  border-radius: 16px;
+  color: var(--color_gray_500);
+  box-shadow: var(--shadow_low);
+  border: 1px solid var(--color_white_shadow);
+  width: 21em;
+  height: 21em;
+  padding: 0.5em;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+section#projects .card .card-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.btn_card {
+  background-color: var(--color_secundary);
+  color: var(--color_white);
+  border: 1px solid var(--color_white);
+  cursor: pointer;
+  outline: none;
+  padding: .3em 2em;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+}
+section#projects .card .img {
+  width: 100%;
+  height: 80%;
+  margin-bottom: 0.8em;
+}
+section#projects .card .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+section#contacts .tilt-1 {
+  top: 0;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+}
+section#contacts .connect {
+  display: flex;
+  justify-content: center;
+}
+section#contacts .connect-me {
+  background: var(--color_white_shadow);
+  box-shadow: var(--shadow_low);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid var(--color_white_shadow);
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+section#contacts .connect-me #ilustration {
+  width: 45%;
+  background-color: var(--color_secundary);
+  border-radius: 16px 0 0 16px;
+  -webkit-border-radius: 16px 0 0 16px;
+  -moz-border-radius: 16px 0 0 16px;
+  -ms-border-radius: 16px 0 0 16px;
+  -o-border-radius: 16px 0 0 16px;
+}
+section#contacts .connect-me #contact-me {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section#contacts .connect-me #contact-me form {
+  padding: 1.5em;
+  width: 100%;
+  gap: 0.8em;
+}
+section#contacts #contact-me form .names {
+  display: flex;
+  width: 100%;
+  gap: 0.5em;
+}
+section#contacts #contact-me form .inputBox {
+  position: relative;
+  flex: 1;
+}
+section#contacts #contact-me form .inputBox input,
+section#contacts #contact-me form .inputBox textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: 1px solid var(--color_white_shadow);
+  background-color: var(--color_gray_500);
+  border-radius: 8px;
+  outline: none;
+  font-family: var(--font_family);
+  font-size: var(--font_size_md);
+  color: var(--color_gray_100);
+  transition: 0.4s;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+section#contacts #contact-me form .inputBox textarea:valid,
+section#contacts #contact-me form .inputBox textarea:focus,
+section#contacts #contact-me form .inputBox input:valid,
+section#contacts #contact-me form .inputBox input:focus {
+  border: 1px solid var(--color_secundary);
+}
+section#contacts #contact-me form .inputBox textarea:valid ~ span,
+section#contacts #contact-me form .inputBox textarea:focus ~ span,
+section#contacts #contact-me form .inputBox input:valid ~ span,
+section#contacts #contact-me form .inputBox input:focus ~ span {
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 1px 10px;
+  letter-spacing: 0.2em;
+  color: var(--color_gray_500);
+  background-color: var(--color_secundary);
+}
+section#contacts #contact-me form .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: var(--color_white_shadow);
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+section#contacts #contact-me form .send input {
+  width: 100%;
+  padding: 1em;
+  font-size: var(--font_size_md);
+}
