@@ -100,7 +100,7 @@ header nav li {
     display: block;
     position: absolute;
     width: 100%;
-    height: 0px;
+    height: 4px;
     overflow-y: hidden;
     top: 64px;
     right: 0;

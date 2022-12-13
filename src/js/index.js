@@ -63,16 +63,19 @@ function loadding() {
   const $header = document.querySelector("header");
   const $main = document.querySelector("main");
 
-  fetch("https://soudev-api.onrender.com/v1/soudev")
+ 
+    fetch("https://manuelhonoredesousa.onrender.com")
+    // fetch("http://localhost:3000/")
     .then((res) => res.json())
     .then((data) => {
+      // console.log(data);
       const { skills, projects } = data;
       theProjects = projects
       skills.forEach((item) => {
         $skills.insertAdjacentHTML(
           "beforeend",
           `
-            <figure data-aos="zoom-out">
+            <figure ">
               <img src="${item.icon}" alt="${item.alt}"/>
               <figcaption>${item.name}</figcaption>
             </figure>
