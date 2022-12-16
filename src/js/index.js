@@ -15,6 +15,12 @@ const $loaddingElement = document.querySelector(".loaddingElement");
 const $loadText = document.querySelector("#loadText");
 const $loadSVG = document.querySelector(".different-directions");
 let theProjects = Array();
+const API = 'https://soudev-api.netlify.app/'     // "https://manuelhonoredesousa.onrender.com/v1/email"
+const infoRouter = `${API}api`     // "https://manuelhonoredesousa.onrender.com"
+// const downloadRouter = `${API}download/cv`;
+const downloadRouter = `https://www.mediafire.com/file/j533kd47uz1u5i1/MANUEL_HONORE_DE_SOUSA_DEV_CV_PT.pdf`;
+const emailRouter = `${API}email`;
+
 
 //Activiti
 window.onscroll = () => showScrollButtom();
@@ -29,7 +35,7 @@ formData.addEventListener('submit', function (e) {
     $loadText.innerText = 'Enviando Email...'
     $loadSVG.classList.remove("hide")
     $loaddingElement.classList.remove("hide")
-    fetch("https://soudev-api.onrender.com/v1/email", {
+    fetch(emailRouter, {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify({
@@ -52,7 +58,7 @@ formData.addEventListener('submit', function (e) {
 .finally(()=>{
   setTimeout(() => {
     $loaddingElement.classList.add("hide")
-  }, 3000);
+  }, 1500);
 })
 })
 
@@ -64,8 +70,7 @@ function loadding() {
   const $main = document.querySelector("main");
 
  
-    fetch("https://manuelhonoredesousa.onrender.com")
-    // fetch("http://localhost:3000/")
+    fetch(infoRouter)
     .then((res) => res.json())
     .then((data) => {
       // console.log(data);
@@ -75,7 +80,7 @@ function loadding() {
         $skills.insertAdjacentHTML(
           "beforeend",
           `
-            <figure ">
+            <figure data-aos="zoom-in">
               <img src="${item.icon}" alt="${item.alt}"/>
               <figcaption>${item.name}</figcaption>
             </figure>
@@ -85,7 +90,7 @@ function loadding() {
         $projects.insertAdjacentHTML(
           "beforeend",
           `
-            <div data-aos="zoom-in" class="card">
+            <div data-aos="zoom-out" class="card">
             <div class="img"><img src="${item.thumbnail}" alt="#" /></div>
             <div class="card-info"><strong>${item.name}</strong> <button onclick="showProject('${item.name}')" class="btn_card">Ver</button></div>
             </div>
@@ -130,6 +135,9 @@ function toggleMenu(event) {
   const isTouch = event.type === "touchstart";
   if (isTouch) event.preventDefault();
   $nav.classList.toggle("active");
+}
+function downloadCV() {
+  window.location.href = downloadRouter
 }
 
 const closeProjectShow = ()=>{
