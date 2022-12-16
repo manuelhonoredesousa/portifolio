@@ -15,11 +15,10 @@ const $loaddingElement = document.querySelector(".loaddingElement");
 const $loadText = document.querySelector("#loadText");
 const $loadSVG = document.querySelector(".different-directions");
 let theProjects = Array();
-const API = 'https://soudev-api.netlify.app/'     // "https://manuelhonoredesousa.onrender.com/v1/email"
-const infoRouter = `${API}api`     // "https://manuelhonoredesousa.onrender.com"
-// const downloadRouter = `${API}download/cv`;
-const downloadRouter = `https://www.mediafire.com/file/j533kd47uz1u5i1/MANUEL_HONORE_DE_SOUSA_DEV_CV_PT.pdf`;
-const emailRouter = `${API}email`;
+const getInfoAPI = 'https://soudev-api.netlify.app/api';   
+const emailAndDownloadAPI = 'https://soudev-email-download.up.railway.app/'    
+const downloadRouter = `${emailAndDownloadAPI}download-cv`;
+const emailRouter = `${emailAndDownloadAPI}send-email`;
 
 
 //Activiti
@@ -70,7 +69,7 @@ function loadding() {
   const $main = document.querySelector("main");
 
  
-    fetch(infoRouter)
+    fetch(getInfoAPI)
     .then((res) => res.json())
     .then((data) => {
       // console.log(data);
