@@ -16,7 +16,7 @@ const $loadText = document.querySelector("#loadText");
 const $loadSVG = document.querySelector(".different-directions");
 let theProjects = Array();
 const getInfoAPI = 'https://soudev-api.netlify.app/api';   
-const emailAndDownloadAPI = 'https://soudev-email-download.up.railway.app/'    
+const emailAndDownloadAPI = 'https://soudev-api.cyclic.app/'    
 const downloadRouter = `${emailAndDownloadAPI}download-cv`;
 const emailRouter = `${emailAndDownloadAPI}send-email`;
 
